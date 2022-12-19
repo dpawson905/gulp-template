@@ -10,14 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "autoprefixer": "^10.3.7",
-    "browser-sync": "^2.27.5",
-    "cssnano": "^5.0.8",
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.11",
+    "cssnano": "^5.1.14",
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.1",
-    "gulp-sass": "^5.0.0",
+    "gulp-sass": "^5.1.0",
     "gulp-terser": "^2.1.0",
-    "postcss": "^8.3.11",
-    "sass": "^1.43.3"
+    "postcss": "^8.4.20",
+    "sass": "^1.57.0"
   }
 }
