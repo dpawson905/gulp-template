@@ -10,7 +10,7 @@ const browersync = require("browser-sync").create();
 function scssTask() {
   var plugins = [
     autoprefixer(),
-    cssnano()
+    // cssnano()
   ]
   return src("app/scss/style.scss", { sourcemaps: true })
     .pipe(sass())

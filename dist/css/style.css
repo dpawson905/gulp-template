@@ -1,2 +1,58 @@
-*,:after,:before{box-sizing:inherit;margin:0;padding:0}html{font-size:62.5%}@media (max-width:75em){html{font-size:56.25%}}@media (max-width:56.25em){html{font-size:50%}}@media (min-width:112.5em){html{font-size:75%}}body{box-sizing:border-box;padding:3rem}@media (max-width:56.25em){body{padding:0}}
+/*
+0-600px:       Phone
+600-900px:     Tablet portrait
+900-1200px:    Tablet landscape
+[1200 - 1800]: Normal Styles apply
+1800px + :     Big Desktop
+&breakpoint argument choices
+- phone
+- tab-port
+- tap-land
+- big-desktop
+ORDER: Base + typography > general layout + grid > page layout > components
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-orange: #f18f01;
+  --color-orange-light: #feb140;
+  --color-orange-dark: #a56201;
+  --color-blue: #048ba8;
+  --color-blue-light: #06c9f3;
+  --color-blue-dark: #024d5d;
+  --color-charcoal: #2e4057;
+  --color-charcoal-light: #486589;
+  --color-charcoal-dark: #141b25;
+  --color-green: #99c24d;
+  --color-green-light: #bad686;
+  --color-green-dark: #6f9132;
+  --color-black: #2f2d2e;
+  --color-black-light: #565254;
+  --color-black-dark: #080808;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
