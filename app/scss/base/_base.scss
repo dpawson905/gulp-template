@@ -26,18 +26,48 @@ $colors: (
 
 html {
   font-size: 62.5%; // 1rem = 10px 10px/16px = 62.5%
+}
 
-  @include respond(tab-land) {
-    // width < 1200px
-    font-size: 56.25%; // 1rem = 9px - 9/16 = 56.25%
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  font-family: 'Chivo Mono', monospace;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
   }
 
-  @include respond(tab-port) {
-    // width < 900px
-    font-size: 50%; // 1rem = 8px - 8/16 = 50%
-  }
-
-  @include respond(big-desktop) {
-    font-size: 75%; // 1rem = 12px - 12/16 = 75%
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

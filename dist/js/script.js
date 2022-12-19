@@ -1,2 +1,2 @@
-
+function ready(e){"loading"!==document.readyState?e():document.addEventListener("DOMContentLoaded",e)}ready((function(){const e=document.querySelector(".header"),t=document.querySelector(".header__menu"),n=document.querySelector(".header__overlay");t.addEventListener("click",(()=>{t.classList.toggle("open"),e.classList.toggle("open"),n.classList.toggle("open")}))}));
 //# sourceMappingURL=script.js.map
